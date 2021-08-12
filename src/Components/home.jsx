@@ -1,40 +1,57 @@
-import { Button } from 'bootstrap'
 import React from 'react'
 
 import Carousel from 'react-bootstrap/Carousel'
-import img from '../img/placeholder.com-logo1.jpg'
+
+import logo from '../assets/images/logo.png'
+import banner1 from '../assets/images/banner-home-1.png'
+import banner2 from '../assets/images/banner-home-2.png'
+import banner3 from '../assets/images/banner-home-3.png'
+import igpreview from '../assets/images/ig preview.png'
+import ilustrasion from '../assets/images/ilustrasion.png'
 
 const home = () => {
     return (
         <div>
             <div className="col p-4 d-flex flex-column position-static mt-2 border-bottom border-dark" style={{ alignItems: 'center' }}>
-                <Carousel style={{ height: 400, width: 800 }}>
+                <Carousel style={{ height: 800, width: 1600 }}>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://i.picsum.photos/id/373/800/400.jpg?hmac=S9GZ-LQ8X3bO6GMOs4x9_zY7QE2mTtsVdKO7Uy44T64"
+                            src={banner1}
                             alt=""
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://i.picsum.photos/id/373/800/400.jpg?hmac=S9GZ-LQ8X3bO6GMOs4x9_zY7QE2mTtsVdKO7Uy44T64"
+                            src={banner2}
                             alt=""
                         />
                     </Carousel.Item>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://i.picsum.photos/id/373/800/400.jpg?hmac=S9GZ-LQ8X3bO6GMOs4x9_zY7QE2mTtsVdKO7Uy44T64"
+                            src={banner3}
                             alt=""
                         />
                     </Carousel.Item>
+
                 </Carousel>
             </div>
-            <div className="col p-4 border-bottom border-dark" style={{ marginTop: 30 }}>
+            <div className="col p-4 border-bottom border-dark">
                 <h3>Nuestro delicioso menú</h3>
-                <p className="card-text mb-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur auctor enim placerat dui luctus, tincidunt ullamcorper lacus volutpat. Sed nec libero risus. Nam porttitor viverra ornare. Nullam mollis lectus et lorem ullamcorper, at commodo tortor posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc malesuada sed libero ut iaculis. Integer sollicitudin iaculis pretium.</p>
+                <p className="col-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Curabitur auctor enim placerat dui luctus, tincidunt ullamcorper lacus volutpat. Sed nec libero risus.
+                    Nam porttitor viverra ornare. Nullam mollis lectus et lorem ullamcorper, at commodo tortor posuere.
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
+                    Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc malesuada sed libero ut iaculis.
+                    Integer sollicitudin iaculis pretium.
+                </p>
+                <img
+                    src={ilustrasion}
+                    alt=''
+                    style={{ height: 300, width: 300, float: 'right', marginTop: -250 }}
+                />
                 <button className="btn rounded-pill mt-3" style={{ backgroundColor: "#544234", color: 'white' }}>
                     Suscribirse
                 </button>
@@ -52,13 +69,14 @@ const home = () => {
                     <h3 style={{ color: 'white' }}>SIGUENOS EN INSTAGRAM</h3>
                     <div className='mb-3'>
                         <img
-                            src='https://i.picsum.photos/id/73/150/200.jpg?hmac=j34QA7IU2SPF17qrnrcjZHjWiwllLPvDbqobKtfTdb0'
+                            src={igpreview}
                             alt=''
+                            style={{ height: 300, width: 300 }}
                         />
                     </div>
                     <div>
                         <img
-                            src={img}
+                            src={logo}
                             alt=""
                             style={{ height: 60, width: 300 }}
                         />

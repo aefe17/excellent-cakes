@@ -7,8 +7,8 @@ import {
   Link
 } from "react-router-dom";
 
+import logo from './assets/images/logo.png'
 
-import img from './img/placeholder.com-logo1.jpg'
 import Contact from './Components/Contact';
 import Menu from './Components/Menu';
 import Suggestions from './Components/Suggestions';
@@ -23,7 +23,7 @@ function App() {
           <Link to="/Menu" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}> menú</Link>
           <div>
             <img
-              src={img}
+              src={logo}
               alt=""
               style={{ height: 60, width: 300 }}
             />

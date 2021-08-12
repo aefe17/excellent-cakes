@@ -7,13 +7,22 @@ import {
     Link
 } from "react-router-dom";
 
+import dessert_product1 from '../assets/images/producto_postre1.png'
+import dessert_product2 from '../assets/images/producto_postre2.png'
+import dessert_product3 from '../assets/images/producto_postre3.png'
+import dessert_product4 from '../assets/images/producto_postre4.png'
+import dessert_product5 from '../assets/images/producto_postre5.png'
+import dessert_product6 from '../assets/images/producto_postre6.png'
+
+import banner4 from '../assets/images/banner-home-4.png'
+
 import Ordenar from './Ordernar'
 
 const Menu = () => {
     return (
         <div className='container marketing'>
             <div className="col p-4 d-flex flex-column position-static mt-2 border-bottom border-dark" style={{ alignItems: 'center' }}>
-                <img src='https://i.picsum.photos/id/484/800/600.jpg?hmac=kuhqXFPDWFNLGZhctoCT_0Of-F1t1sm8hqnM5cRHM4M'
+                <img src={banner4}
                     alt=''
                     style={{ height: 400, width: 800 }}
                 />
@@ -23,7 +32,7 @@ const Menu = () => {
                     <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                         <img className='rounded-circle'
                             style={{ width: 140, height: 140 }}
-                            src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                            src={dessert_product1}
                             alt=''
                         />
                         <h2>Producto 1</h2>
@@ -33,7 +42,7 @@ const Menu = () => {
                     <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                         <img className='rounded-circle'
                             style={{ width: 140, height: 140 }}
-                            src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                            src={dessert_product2}
                             alt=''
                         />
                         <h2>Producto 2</h2>
@@ -43,7 +52,7 @@ const Menu = () => {
                     <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                         <img className='rounded-circle'
                             style={{ width: 140, height: 140 }}
-                            src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                            src={dessert_product3}
                             alt=''
                         />
                         <h2>Producto 3</h2>
@@ -54,7 +63,7 @@ const Menu = () => {
                         <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                             <img className='rounded-circle'
                                 style={{ width: 140, height: 140 }}
-                                src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                                src={dessert_product4}
                                 alt=''
                             />
                             <h2>Producto 4</h2>
@@ -64,7 +73,7 @@ const Menu = () => {
                         <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                             <img className='rounded-circle'
                                 style={{ width: 140, height: 140 }}
-                                src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                                src={dessert_product5}
                                 alt=''
                             />
                             <h2>Producto 5</h2>
@@ -74,7 +83,7 @@ const Menu = () => {
                         <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                             <img className='rounded-circle'
                                 style={{ width: 140, height: 140 }}
-                                src='data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=='
+                                src={dessert_product6}
                                 alt=''
                             />
                             <h2>Producto 6</h2>

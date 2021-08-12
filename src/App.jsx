@@ -42,11 +42,16 @@ function App() {
           <Route path="/Suggestions"><Suggestions/></Route>
           <Route path="/Menu"><Menu/></Route>
         </Switch>
-        <div>
-          
+        <div className="">
+          <Carousel style={{width:800, height :400}}>
+            <Carousel.Item>
+              <img 
+              className="d-block w-100"
+              src="https://i.picsum.photos/id/373/800/400.jpg?hmac=S9GZ-LQ8X3bO6GMOs4x9_zY7QE2mTtsVdKO7Uy44T64"
+              />
+            </Carousel.Item>
+          </Carousel>
         </div>
-    
-
       </div>
     </Router>
   );

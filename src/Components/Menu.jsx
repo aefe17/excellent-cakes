@@ -27,72 +27,69 @@ const Menu = () => {
                     alt=''
                     style={{ height: 400, width: 800 }}
                 />
-                <div style={{ position: 'absolute', right: '38%', bottom: '74%', fontFamily: 'Leckerli One', fontSize: 100 }}>
-                    Nuestro Menu
-                </div>
             </div>
             <Router>
                 <div className="row mt-3 d-flex">
-                    <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
+                    <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
                         <img className='rounded-circle'
                             style={{ width: 140, height: 140 }}
                             src={dessert_product1}
                             alt=''
                         />
-                        <h2>Producto 1</h2>
+                        <h2 style={{ fontWeight: 'bold' }}>Producto 1</h2>
                         <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
+                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
                     </div>
-                    <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
+                    <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
                         <img className='rounded-circle'
                             style={{ width: 140, height: 140 }}
                             src={dessert_product2}
                             alt=''
                         />
-                        <h2>Producto 2</h2>
+                        <h2 style={{ fontWeight: 'bold' }}>Producto 2</h2>
                         <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
+                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>ORDENAR</Link>
                     </div>
-                    <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
+                    <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
                         <img className='rounded-circle'
                             style={{ width: 140, height: 140 }}
                             src={dessert_product3}
                             alt=''
                         />
-                        <h2>Producto 3</h2>
+                        <h2 style={{ fontWeight: 'bold' }}>Producto 3</h2>
                         <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
+                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>ORDENAR</Link>
                     </div>
                     <div className="row mt-3 d-flex">
-                        <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
+                        <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
                             <img className='rounded-circle'
                                 style={{ width: 140, height: 140 }}
                                 src={dessert_product4}
                                 alt=''
                             />
-                            <h2>Producto 4</h2>
+                            <h2 style={{ fontWeight: 'bold' }}>Producto 4</h2>
                             <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
+                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>ORDENAR</Link>
                         </div>
-                        <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
+                        <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
                             <img className='rounded-circle'
                                 style={{ width: 140, height: 140 }}
                                 src={dessert_product5}
                                 alt=''
                             />
-                            <h2>Producto 5</h2>
+                            <h2 style={{ fontWeight: 'bold' }}>Producto 5</h2>
                             <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
+                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>ORDENAR</Link>
                         </div>
-                        <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
+                        <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
                             <img className='rounded-circle'
                                 style={{ width: 140, height: 140 }}
                                 src={dessert_product6}
                                 alt=''
                             />
-                            <h2>Producto 6</h2>
+                            <h2 style={{ fontWeight: 'bold' }}>Producto 6</h2>
                             <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
+                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>ORDENAR</Link>
                         </div>
                     </div>
                 </div>
@@ -100,7 +97,7 @@ const Menu = () => {
                     <Route path='/Order'><Order /></Route>
                 </Switch>
             </Router>
-        </div>
+        </div >
     )
 }
 

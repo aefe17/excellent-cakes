@@ -7,8 +7,6 @@ import {
     Link
 } from "react-router-dom";
 
-import Carousel from 'react-bootstrap/Carousel'
-
 
 import dessert_product1 from '../assets/images/producto_postre1.png'
 import dessert_product2 from '../assets/images/producto_postre2.png'
@@ -29,8 +27,8 @@ const Menu = () => {
                     alt=''
                     style={{ height: 400, width: 800 }}
                 />
-                <div className="fontBrusher" style={{ position: 'absolute', right: '47%', bottom: '60%' }}>
-                    <h3>Nuestro Menu</h3>
+                <div style={{ position: 'absolute', right: '38%', bottom: '74%', fontFamily: 'Leckerli One', fontSize: 100 }}>
+                    Nuestro Menu
                 </div>
             </div>
             <Router>

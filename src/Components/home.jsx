@@ -39,8 +39,8 @@ const home = () => {
                 </Carousel>
             </div>
             <div className="col p-4 border-bottom border-dark">
-                <h3>Nuestro delicioso menú</h3>
-                <p className="col-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <h3 style={{ fontFamily: 'Leckerli One' }}>Nuestro delicioso menú</h3>
+                <p className="col-2" style={{ fontFamily: 'Poppins' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur auctor enim placerat dui luctus, tincidunt ullamcorper lacus volutpat. Sed nec libero risus.
                     Nam porttitor viverra ornare. Nullam mollis lectus et lorem ullamcorper, at commodo tortor posuere.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
@@ -52,21 +52,21 @@ const home = () => {
                     alt=''
                     style={{ height: 300, width: 300, float: 'right', marginTop: -250 }}
                 />
-                <button className="btn rounded-pill mt-3" style={{ backgroundColor: "#544234", color: 'white' }}>
+                <button className="btn rounded-pill mt-3" style={{ backgroundColor: "#544234", color: 'white', fontFamily: 'Poppins' }}>
                     Suscribirse
                 </button>
             </div>
 
             <div className="row" style={{ backgroundColor: '#B99877' }}>
                 <div className="col-md-4 mx-4">
-                    <h3 className='mt-3' style={{ color: '#402D22' }}>Suscribete a nuestro newsletter</h3>
+                    <h3 className='mt-3' style={{ color: '#402D22', fontFamily: 'Leckerli One' }}>Suscribete a nuestro newsletter</h3>
                     <input placeholder="Nombre y Apellido" className="form-control mb-3" type="text" />
                     <input placeholder="Correo electronico" className="form-control mb-3" type="text" />
-                    <button className="btn rounded-pill mt-3" style={{ backgroundColor: "#544234", color: 'white' }}>Suscribirse</button>
+                    <button className="btn rounded-pill mt-3" style={{ backgroundColor: "#544234", color: 'white', fontFamily: 'Poppins' }}>Suscribirse</button>
                 </div>
 
                 <div className="col-md-3 mt-3">
-                    <h3 style={{ color: 'white' }}>SIGUENOS EN INSTAGRAM</h3>
+                    <h3 style={{ color: 'white', fontFamily: 'Poppins' }}>SIGUENOS EN INSTAGRAM</h3>
                     <div className='mb-3'>
                         <img
                             src={igpreview}
@@ -81,7 +81,7 @@ const home = () => {
                             style={{ height: 60, width: 300 }}
                         />
                     </div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <p style={{ fontFamily: 'Poppins' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </div>
             </div>
         </div >

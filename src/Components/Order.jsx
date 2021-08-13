@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Ordernar = () => {
+const Order = () => {
     return (
         <div>
-
+            <h1>Ordenar</h1>
         </div>
     )
 }
 
-export default Ordernar
+export default Order

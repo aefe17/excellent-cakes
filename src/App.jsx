@@ -13,11 +13,12 @@ import Contact from './Components/Contact';
 import Menu from './Components/Menu';
 import Suggestions from './Components/Suggestions';
 import Home from './Components/home'
+import Order from './Components/Order'
 
 function App() {
   return (
     <Router>
-      <nav className="site-header sticky-top py-1 ">
+      <nav className="site-header sticky-top py-1" style={{ backgroundColor: 'white' }}>
         <div className="container d-flex flex-column flex-md-row justify-content-between">
           <Link to="/" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}>home</Link>
           <Link to="/Menu" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}> menú</Link>
@@ -36,6 +37,7 @@ function App() {
         <Route path="/Contact"><Contact /></Route>
         <Route path="/Suggestions"><Suggestions /></Route>
         <Route path="/Menu"><Menu /></Route>
+        <Route path='/Order'><Order /></Route>
         <Route path="/"><Home /></Route>
       </Switch>
     </Router>

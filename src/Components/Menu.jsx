@@ -7,6 +7,9 @@ import {
     Link
 } from "react-router-dom";
 
+import Carousel from 'react-bootstrap/Carousel'
+
+
 import dessert_product1 from '../assets/images/producto_postre1.png'
 import dessert_product2 from '../assets/images/producto_postre2.png'
 import dessert_product3 from '../assets/images/producto_postre3.png'
@@ -16,7 +19,7 @@ import dessert_product6 from '../assets/images/producto_postre6.png'
 
 import banner4 from '../assets/images/banner-home-4.png'
 
-import Ordenar from './Ordernar'
+import Order from './Order'
 
 const Menu = () => {
     return (
@@ -26,6 +29,9 @@ const Menu = () => {
                     alt=''
                     style={{ height: 400, width: 800 }}
                 />
+                <div className="fontBrusher" style={{ position: 'absolute', right: '47%', bottom: '60%' }}>
+                    <h3>Nuestro Menu</h3>
+                </div>
             </div>
             <Router>
                 <div className="row mt-3 d-flex">
@@ -37,7 +43,7 @@ const Menu = () => {
                         />
                         <h2>Producto 1</h2>
                         <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                        <button className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Ordenar</button>
+                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
                     </div>
                     <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                         <img className='rounded-circle'
@@ -47,7 +53,7 @@ const Menu = () => {
                         />
                         <h2>Producto 2</h2>
                         <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                        <button className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Ordenar</button>
+                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
                     </div>
                     <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                         <img className='rounded-circle'
@@ -57,7 +63,7 @@ const Menu = () => {
                         />
                         <h2>Producto 3</h2>
                         <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                        <button className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Ordenar</button>
+                        <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
                     </div>
                     <div className="row mt-3 d-flex">
                         <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
@@ -68,7 +74,7 @@ const Menu = () => {
                             />
                             <h2>Producto 4</h2>
                             <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                            <button className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Ordenar</button>
+                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
                         </div>
                         <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                             <img className='rounded-circle'
@@ -78,7 +84,7 @@ const Menu = () => {
                             />
                             <h2>Producto 5</h2>
                             <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                            <button className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Ordenar</button>
+                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
                         </div>
                         <div className="col p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center' }}>
                             <img className='rounded-circle'
@@ -88,12 +94,12 @@ const Menu = () => {
                             />
                             <h2>Producto 6</h2>
                             <p>Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim</p>
-                            <button className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Ordenar</button>
+                            <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white' }}>Order</Link>
                         </div>
                     </div>
                 </div>
                 <Switch>
-                    <Route path='/Menu/Ordernar'><Ordenar /></Route>
+                    <Route path='/Order'><Order /></Route>
                 </Switch>
             </Router>
         </div>

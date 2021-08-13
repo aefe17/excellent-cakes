@@ -36,3 +36,12 @@
     transform: rotate(360deg);
   }
 }
+
+@font-face {
+  font-family: 'Brusher';
+  src: local('Brusher') url(./assets/fonts/Brusher.ttf) format('truetype');
+}
+
+.fontBrusher{
+  font-family: Brusher;
+}

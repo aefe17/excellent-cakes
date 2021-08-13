@@ -39,7 +39,7 @@ const home = () => {
                 </Carousel>
             </div>
             <div className="col p-4 border-bottom border-dark">
-                <h3 style={{ fontFamily: 'Leckerli One' }}>Nuestro delicioso menú</h3>
+                <h1 style={{ fontFamily: 'Leckerli One', color: '#3E2F25' }}>Nuestro delicioso menú</h1>
                 <p className="col-5" style={{ fontFamily: 'Poppins' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur auctor enim placerat dui luctus, tincidunt ullamcorper lacus volutpat. Sed nec libero risus.
                     Nam porttitor viverra ornare. Nullam mollis lectus et lorem ullamcorper, at commodo tortor posuere.
@@ -59,13 +59,13 @@ const home = () => {
 
             <div className="row" style={{ backgroundColor: '#B99877' }}>
                 <div className="col-md-4 mx-4">
-                    <h3 className='mt-3' style={{ color: '#402D22', fontFamily: 'Leckerli One' }}>Suscribete a nuestro newsletter</h3>
+                    <h1 className='mt-3' style={{ color: '#402D22', fontFamily: 'Leckerli One' }}>Suscribete a nuestro newsletter</h1>
                     <input placeholder="Nombre y Apellido" className="form-control mb-3" type="text" />
                     <input placeholder="Correo electronico" className="form-control mb-3" type="text" />
-                    <button className="btn rounded-pill mt-3" style={{ backgroundColor: "#544234", color: 'white', fontFamily: 'Poppins' }}>Suscribirse</button>
+                    <button className="btn rounded-pill" style={{ backgroundColor: "#544234", color: 'white', fontFamily: 'Poppins' }}>Suscribirse</button>
                 </div>
 
-                <div className="col-md-3 mt-3">
+                <div className="col-md-3 mt-3" style={{ marginLeft: 400 }}>
                     <h3 style={{ color: 'white', fontFamily: 'Poppins' }}>SIGUENOS EN INSTAGRAM</h3>
                     <div className='mb-3'>
                         <img

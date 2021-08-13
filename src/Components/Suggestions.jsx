@@ -4,7 +4,7 @@ import brownLine from '../assets/images/linea marron.png'
 
 const Suggestions = () => {
     return (
-        <div className='mt-3' style={{ textAlign: 'center' }}>
+        <div className='container marketing mt-3' style={{ textAlign: 'center' }}>
             <h2 style={{ fontFamily: 'Leckerli One' }}>¿Alguna sugerencia?</h2>
             <img src={brownLine} alt='' style={{ width: 600 }} />
             <h3 style={{ fontFamily: 'Poppins' }}>Ayudanos a mejorar</h3>

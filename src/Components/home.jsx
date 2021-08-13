@@ -11,7 +11,7 @@ import ilustrasion from '../assets/images/ilustrasion.png'
 
 const home = () => {
     return (
-        <div>
+        <div className="container marketing">
             <div className="col p-4 d-flex flex-column position-static mt-2 border-bottom border-dark" style={{ alignItems: 'center' }}>
                 <Carousel style={{ height: 800, width: 1600 }}>
                     <Carousel.Item>
@@ -40,7 +40,7 @@ const home = () => {
             </div>
             <div className="col p-4 border-bottom border-dark">
                 <h3 style={{ fontFamily: 'Leckerli One' }}>Nuestro delicioso menú</h3>
-                <p className="col-2" style={{ fontFamily: 'Poppins' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <p className="col-5" style={{ fontFamily: 'Poppins' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur auctor enim placerat dui luctus, tincidunt ullamcorper lacus volutpat. Sed nec libero risus.
                     Nam porttitor viverra ornare. Nullam mollis lectus et lorem ullamcorper, at commodo tortor posuere.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;

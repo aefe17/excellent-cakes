@@ -11,9 +11,11 @@ import ilustrasion from '../assets/images/ilustrasion.png'
 
 const home = () => {
     return (
-        <div className="container marketing">
-            <div className="col p-4 d-flex flex-column position-static mt-2 border-bottom border-dark" style={{ alignItems: 'center' }}>
-                <Carousel style={{ height: 800, width: 1600 }}>
+        <div className="container">
+            <div className="row">
+
+            <div className="col-12 p-4 d-flex flex-column position-static mt-2 border-bottom border-dark" style={{ alignItems: 'center' }}>
+                <Carousel>
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
@@ -38,34 +40,42 @@ const home = () => {
 
                 </Carousel>
             </div>
+            </div>
             <div className="col p-4 border-bottom border-dark">
                 <h1 style={{ fontFamily: 'Leckerli One', color: '#3E2F25' }}>Nuestro delicioso menú</h1>
-                <p className="col-5" style={{ fontFamily: 'Poppins' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                <div className="row">
+                    
+                <p className="col-12 col-md-5" style={{ fontFamily: 'Poppins' }}>Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                     Curabitur auctor enim placerat dui luctus, tincidunt ullamcorper lacus volutpat. Sed nec libero risus.
                     Nam porttitor viverra ornare. Nullam mollis lectus et lorem ullamcorper, at commodo tortor posuere.
                     Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae;
                     Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc malesuada sed libero ut iaculis.
                     Integer sollicitudin iaculis pretium.
                 </p>
+                <div className="col-7 col-12 col-md-5">
                 <img
                     src={ilustrasion}
                     alt=''
-                    style={{ height: 300, width: 300, float: 'right', marginTop: -250 }}
+                    style={{ height: 300, width: 300, float: 'right'}}
                 />
+                </div>
+                </div>
                 <button className="btn rounded-pill mt-3" style={{ backgroundColor: "#544234", color: 'white', fontFamily: 'Poppins' }}>
                     Suscribirse
                 </button>
             </div>
 
             <div className="row" style={{ backgroundColor: '#B99877' }}>
-                <div className="col-md-4 mx-4">
+                <div className="col-md-4">
+                    <div className="px-4 mt-3">
                     <h1 className='mt-3' style={{ color: '#402D22', fontFamily: 'Leckerli One' }}>Suscribete a nuestro newsletter</h1>
                     <input placeholder="Nombre y Apellido" className="form-control mb-3" type="text" />
                     <input placeholder="Correo electronico" className="form-control mb-3" type="text" />
                     <button className="btn rounded-pill" style={{ backgroundColor: "#544234", color: 'white', fontFamily: 'Poppins' }}>Suscribirse</button>
+                    </div>
                 </div>
 
-                <div className="col-md-3 mt-3" style={{ marginLeft: 400 }}>
+                <div className="col-md-4 mt-3 offset-md-3">
                     <h3 style={{ color: 'white', fontFamily: 'Poppins' }}>SIGUENOS EN INSTAGRAM</h3>
                     <div className='mb-3'>
                         <img

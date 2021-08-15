@@ -14,6 +14,9 @@ import Menu from './Components/Menu';
 import Suggestions from './Components/Suggestions';
 import Home from './Components/home'
 import Order from './Components/Order'
+import Suggestion_Sent from './Components/Suggestion_Sent'
+
+
 
 function App() {
   return (
@@ -39,6 +42,7 @@ function App() {
         <Route path="/Menu"><Menu /></Route>
         <Route path='/Order'><Order /></Route>
         <Route path="/"><Home /></Route>
+        <Route path="/SuggestionSent"><Suggestion_Sent /></Route>
       </Switch>
     </Router>
   );

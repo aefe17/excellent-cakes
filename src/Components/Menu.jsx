@@ -16,10 +16,42 @@ import banner4 from '../assets/images/banner-home-4.png'
 
 const items = [
     {
-        id:uniqid(),
-        title: 'Producto',
-        description:'Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim'
-    }
+        id: uniqid(),
+        img: dessert_product1,
+        title: 'Producto 1',
+        description: 'Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim'
+    },
+    {
+        id: uniqid(),
+        img: dessert_product2,
+        title: 'Producto 2',
+        description: 'Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim'
+    },
+    {
+        id: uniqid(),
+        img: dessert_product3,
+        title: 'Producto 3',
+        description: 'Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim'
+    },
+    {
+        id: uniqid(),
+        img: dessert_product4,
+        title: 'Producto 4',
+        description: 'Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim'
+    },
+    {
+        id: uniqid(),
+        img: dessert_product5,
+        title: 'Producto 5',
+        description: 'Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim'
+    },
+    {
+        id: uniqid(),
+        img: dessert_product6,
+        title: 'Producto 6',
+        description: 'Lorem ipsum doolor sit amet, consectetuer adipscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolere magna aliquam erat volutpat. ut wisi enim'
+    },
+
 ]
 
 
@@ -30,60 +62,24 @@ const Menu = () => {
                 <img src={banner4}
                     alt=''
                     style={{ height: 400, width: 800 }}
-                    
+
                 />
             </div>
+            <div className="row mt-3">
                 {
                     items.map(item => {
-                        return(
-                            <div className="row mt-3">
-                                
-                                <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
-                                    <img className='rounded-circle' style={{width: 140, height:140}} src={dessert_product1} alt=''/>
-                                    <h2 className='font-weight-bold'>{item.title} 1</h2>
-                                    <p>{item.description}</p>
-                                    <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
-                                </div>
-
-                                <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
-                                    <img className='rounded-circle' style={{width: 140, height:140}} src={dessert_product2} alt=''/>
-                                    <h2 className='font-weight-bold'>{item.title} 2</h2>
-                                    <p>{item.description}</p>
-                                    <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
-                                </div>
-
-                                <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
-                                    <img className='rounded-circle' style={{width: 140, height:140}} src={dessert_product3} alt=''/>
-                                    <h2 className='font-weight-bold'>{item.title} 3</h2>
-                                    <p>{item.description}</p>
-                                    <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
-                                </div>
-
-                                <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
-                                    <img className='rounded-circle' style={{width: 140, height:140}} src={dessert_product4} alt=''/>
-                                    <h2 className='font-weight-bold'>{item.title} 4</h2>
-                                    <p>{item.description}</p>
-                                    <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
-                                </div>
-
-                                <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
-                                    <img className='rounded-circle' style={{width: 140, height:140}} src={dessert_product5} alt=''/>
-                                    <h2 className='font-weight-bold'>{item.title} 5</h2>
-                                    <p>{item.description}</p>
-                                    <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
-                                </div>
-
-                                <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
-                                    <img className='rounded-circle' style={{width: 140, height:140}} src={dessert_product6} alt=''/>
-                                    <h2 className='font-weight-bold'>{item.title} 6</h2>
-                                    <p>{item.description}</p>
-                                    <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
-                                </div>
-                        </div> 
+                        return (
+                            <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
+                                <img className='rounded-circle' style={{ width: 140, height: 140 }} src={item.img} alt='' />
+                                <h2 className='font-weight-bold'>{item.title} </h2>
+                                <p>{item.description}</p>
+                                <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
+                            </div>
                         )
                     })
                 }
             </div>
+        </div>
     )
 }
 

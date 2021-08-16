@@ -72,7 +72,7 @@ const Menu = () => {
                         return (
                             <div className="col-4 p-4 d-flex flex-column position-static mt-3" style={{ alignItems: 'center', fontFamily: 'Poppins' }}>
                                 <img className='rounded-circle' style={{ width: 140, height: 140 }} src={item.img} alt='' />
-                                <h2 className='font-weight-bold'>{item.title} </h2>
+                                <h2 className='font-weight-bold' style={{ color: '#3E2F25' }}>{item.title} </h2>
                                 <p>{item.description}</p>
                                 <Link to='/Order' className="btn rounded-pill mb-3" style={{ backgroundColor: "#B99877", color: 'white', }}>ORDENAR</Link>
                             </div>

@@ -14,39 +14,10 @@ import Suggestions from './Components/Suggestions';
 import Order from './Components/Order'
 import Sent from './Components/Sent'
 import Recieved from './Components/Recieved'
-import home from './Components/home';
+import Home from './Components/home'
 
 
-const routes = [
-  {
-    path: '/Recieved',
-    component: Recieved,
-  },
-  {
-    path: '/Suggestions',
-    component: Suggestions,
-  },
-  {
-    path: '/SuggestionSent',
-    component: Sent,
-  },
-  {
-    path: '/Contact',
-    component: Contact,
-  },
-  {
-    path: '/Menu',
-    component: Menu,
-  },
-  {
-    path: '/Order',
-    component: Order,
-  },
-  {
-    path: '/',
-    component: home,
-  },
-]
+
 
 
 function App() {
@@ -68,13 +39,29 @@ function App() {
         </div>
       </nav>
       <Switch>
-        {
-          routes.map(item => {
-            return (
-              <Route path={item.path}>{item.component}</Route>
-            )
-          })
-        }
+        <Switch>
+          <Route path="	">
+            <Recieved />
+          </Route>
+          <Route path="/SuggestionSent">
+            <Sent />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
+          </Route>
+          <Route path="/Suggestions">
+            <Suggestions />
+          </Route>
+          <Route path="/Menu">
+            <Menu />
+          </Route>
+          <Route path="/Order/:id">
+            <Order />
+          </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
+        </Switch>
       </Switch>
     </Router>
   );

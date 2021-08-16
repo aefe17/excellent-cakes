@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Suggestion_Sent = () => {
+const Sent = () => {
     return (
         <div>
             Suggestion sent
@@ -8,4 +8,4 @@ const Suggestion_Sent = () => {
     )
 }
 
-export default Suggestion_Sent
+export default Sent

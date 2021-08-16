@@ -14,7 +14,7 @@ import Menu from './Components/Menu';
 import Suggestions from './Components/Suggestions';
 import Home from './Components/home'
 import Order from './Components/Order'
-import Suggestion_Sent from './Components/Suggestion_Sent'
+import Sent from './Components/Sent'
 
 
 
@@ -37,12 +37,24 @@ function App() {
         </div>
       </nav>
       <Switch>
-        <Route path="/Contact"><Contact /></Route>
-        <Route path="/Suggestions"><Suggestions /></Route>
-        <Route path="/Menu"><Menu /></Route>
-        <Route path='/Order'><Order /></Route>
-        <Route path="/"><Home /></Route>
-        <Route path="/SuggestionSent"><Suggestion_Sent /></Route>
+        <Route path="/SuggestionSent">
+          <Sent />
+        </Route>
+        <Route path="/Contact">
+          <Contact />
+        </Route>
+        <Route path="/Suggestions">
+          <Suggestions />
+        </Route>
+        <Route path="/Menu">
+          <Menu />
+        </Route>
+        <Route path='/Order'>
+          <Order />
+        </Route>
+        <Route path="/">
+          <Home />
+        </Route>
       </Switch>
     </Router>
   );

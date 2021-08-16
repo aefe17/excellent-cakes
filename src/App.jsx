@@ -1,5 +1,4 @@
 import React from 'react'
-
 import {
   BrowserRouter as Router,
   Switch,
@@ -55,8 +54,8 @@ function App() {
     <Router>
       <nav className="site-header sticky-top py-1 border border-bottom border-dark" style={{ backgroundColor: 'white' }}>
         <div className="container d-flex flex-column flex-md-row justify-content-between">
-          <Link to="/" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}>home</Link>
-          <Link to="/Menu" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}> menú</Link>
+          <Link to="/" className="py-2 d-none d-md-inline-block navbar-brand text-black" >home</Link>
+          <Link to="/Menu" className="py-2 d-none d-md-inline-block navbar-brand text-black" > menú</Link>
           <div>
             <img
               src={logo}
@@ -64,8 +63,8 @@ function App() {
               style={{ height: 60, width: 300 }}
             />
           </div>
-          <Link to="/Suggestions" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}>sugerencias</Link>
-          <Link to="/Contact" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}>contacto</Link>
+          <Link to="/Suggestions" className="py-2 d-none d-md-inline-block navbar-brand text-black" >sugerencias</Link>
+          <Link to="/Contact" className="py-2 d-none d-md-inline-block navbar-brand text-black">contacto</Link>
         </div>
       </nav>
       <Switch>

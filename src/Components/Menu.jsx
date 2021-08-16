@@ -5,6 +5,7 @@ import {
 
 import uniqid from 'uniqid'
 
+
 import dessert_product1 from '../assets/images/producto_postre1.png'
 import dessert_product2 from '../assets/images/producto_postre2.png'
 import dessert_product3 from '../assets/images/producto_postre3.png'

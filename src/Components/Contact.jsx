@@ -47,7 +47,7 @@ const Contact = () => {
                 {
                     items.map(item => {
                         return (
-                            <div className='mt-3 col-6'>
+                            <div className='mt-3 col-4'>
                                 <h2
                                     style={{ color: '#3E2F25', fontFamily: 'Poppins' }}>
                                     <Icons.GeoAltFill className='text-white' />{item.title}

@@ -12,16 +12,48 @@ import logo from './assets/images/logo.png'
 import Contact from './Components/Contact';
 import Menu from './Components/Menu';
 import Suggestions from './Components/Suggestions';
-import Home from './Components/home'
 import Order from './Components/Order'
 import Sent from './Components/Sent'
+import Recieved from './Components/Recieved'
+import home from './Components/home';
 
+
+const routes = [
+  {
+    path: '/Recieved',
+    component: Recieved,
+  },
+  {
+    path: '/Suggestions',
+    component: Suggestions,
+  },
+  {
+    path: '/SuggestionSent',
+    component: Sent,
+  },
+  {
+    path: '/Contact',
+    component: Contact,
+  },
+  {
+    path: '/Menu',
+    component: Menu,
+  },
+  {
+    path: '/Order',
+    component: Order,
+  },
+  {
+    path: '/',
+    component: home,
+  },
+]
 
 
 function App() {
   return (
     <Router>
-      <nav className="site-header sticky-top py-1" style={{ backgroundColor: 'white' }}>
+      <nav className="site-header sticky-top py-1 border border-bottom border-dark" style={{ backgroundColor: 'white' }}>
         <div className="container d-flex flex-column flex-md-row justify-content-between">
           <Link to="/" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}>home</Link>
           <Link to="/Menu" className="py-2 d-none d-md-inline-block navbar-brand" style={{ color: 'black' }}> menú</Link>
@@ -37,24 +69,13 @@ function App() {
         </div>
       </nav>
       <Switch>
-        <Route path="/SuggestionSent">
-          <Sent />
-        </Route>
-        <Route path="/Contact">
-          <Contact />
-        </Route>
-        <Route path="/Suggestions">
-          <Suggestions />
-        </Route>
-        <Route path="/Menu">
-          <Menu />
-        </Route>
-        <Route path='/Order'>
-          <Order />
-        </Route>
-        <Route path="/">
-          <Home />
-        </Route>
+        {
+          routes.map(item => {
+            return (
+              <Route path={item.path}>{item.component}</Route>
+            )
+          })
+        }
       </Switch>
     </Router>
   );
